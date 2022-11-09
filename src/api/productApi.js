@@ -5,21 +5,17 @@ const productApi = {
     const url = "/products";
     return axiosClient.get(url, { params });
   },
-  get(id) {
+  getProduct(id, params) {
     const url = `/products/${id}`;
-    return axiosClient.get(url);
+    return axiosClient.get(url, { params });
   },
-  add(data) {
-    const url = "/products";
-    return axiosClient.post(url, data);
+  getAllCate(params) {
+    const url = "/products/categories";
+    return axiosClient.get(url, { params });
   },
-  update(data) {
-    const url = `/products/${data.id}`;
-    return axiosClient.patch(url, data);
-  },
-  remove(id) {
-    const url = `/products/${id}`;
-    return axiosClient.delete(url);
+  getProductsByCategory(category, params) {
+    const url = `/products/category/${category}`;
+    return axiosClient.get(url, { params });
   },
 };
 export default productApi;

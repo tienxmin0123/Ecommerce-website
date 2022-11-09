@@ -1,0 +1,26 @@
+@import '../../../scss/style.scss';
+.product{
+  padding: 2rem 0;
+  &__category{
+    @include flex(center , unset);
+    margin: 1rem 0;
+    &__item{
+      position: relative;
+      padding: .8rem 1.2rem;
+      text-transform: capitalize;
+      cursor: pointer;
+      &.active{
+        color: $red;
+        &::after{
+          width: 80%;
+        }
+      }
+    }
+  }
+  &__list{
+    @include flex(unset , unset);
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 -10px;
+  }
+}

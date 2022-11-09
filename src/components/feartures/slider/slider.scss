@@ -1,0 +1,9 @@
+@import '../../../scss/style.scss';
+.slider{
+  padding: 11rem 0 2rem 0;
+  &__item{
+    img{
+      height: auto;
+    }
+  }
+}

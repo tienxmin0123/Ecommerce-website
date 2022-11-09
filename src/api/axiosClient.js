@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosClient = axios.create({
-  baseURL: "https://63432b3fba4478d4784948b2.mockapi.io/api",
+  baseURL: "https://fakestoreapi.com",
   headers: {
     "content-type": "application/json",
   },
